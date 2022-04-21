@@ -2,10 +2,12 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MaterialApp(
-    debugShowCheckedModeBanner: false,
-    home: HomePage(),
-  ));
+  runApp(
+    const MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: HomePage(),
+    ),
+  );
 }
 
 class HomePage extends StatefulWidget {
@@ -35,9 +37,11 @@ class _HomePageState extends State<HomePage> {
           Container(
             width: double.infinity,
             decoration: const BoxDecoration(
-                color: Colors.white,
-                borderRadius:
-                    BorderRadius.vertical(bottom: Radius.circular(30))),
+              color: Colors.white,
+              borderRadius: BorderRadius.vertical(
+                bottom: Radius.circular(30),
+              ),
+            ),
             padding: const EdgeInsets.all(20),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -114,7 +118,7 @@ class _HomePageState extends State<HomePage> {
   }
 
   Widget promoCard(image) {
-   return AspectRatio(
+    return AspectRatio(
       aspectRatio: 2 / 3,
       child: Container(
         decoration: const BoxDecoration(color: Colors.orange),
